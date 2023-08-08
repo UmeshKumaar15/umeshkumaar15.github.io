@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umesh Kumaar</title>
+    <title>Umesh's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="uicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -25,7 +27,7 @@
             justify-content: space-around;
             align-items: center;
             height: 43px;
-            background-color: rgba(132, 59, 7, 0.623);
+            background-color: rgb(181, 136, 99);
         }
 
         nav ul {
@@ -48,8 +50,10 @@
             font-size: 1.05rem;
         }
 
-        .left {
+        .left a {
             font-size: 1.5rem;
+            text-decoration: none;
+            color: whitesmoke;
         }
 
         .firstsection {
@@ -81,13 +85,6 @@
 
         .normal {
             color: black;
-            font-weight: 500%;
-        }
-
-        .secondsection {
-            max-width: 80vw;
-            font-size: 25px;
-            color: black;
         }
 
         .grey {
@@ -103,13 +100,66 @@
             margin-left: 10;
             margin: 40px 84px
         }
+
+        .secondsection {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .secondsection2>div {
+            width: 30%;
+        }
+
+        .leftsection2 img {
+            width:50%;
+            margin-left: 100px;
+        }
+
+        .vitinfo{
+            color: black;
+        }
+
+        .rightsection2 {
+            color: black;
+            font-size: 20px;
+            margin-top: 60px;
+            margin-right: 200px;
+        }
+
+        .mirsstyle img {
+            width: 50%;
+            margin-left: 190px;
+        }
+
+        .mirstext {
+            color: black;
+            font-size: 20px;
+            margin-top: 5px;
+            margin-left: 0px;
+            margin-right: 50px;
+        }
+
+        .lgmsstyle img {
+            width: 20%;
+            margin-left: 190px;
+            margin-top: 80px;
+        }
+
+        .lgmstext {
+            color: black;
+            font-size: 20px;
+            margin-top: 65px;
+            margin-left: 90px;
+            margin-right: 13px;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="left">Umesh's Portfolio</div>
+            <div class="left"><a href="https://umeshkumaar15.github.io">Umesh's Portfolio</a></div>
             <div class="right">
                 <ul>
                     <li><a href="/">About</a></li>
@@ -132,12 +182,51 @@
             <div class="rightSection">
                 <img src="mlbg.png" </div>
         </section>
+
         <hr>
+        <h1 style="
+        margin-left: 80px;
+        color: black;
+    ">Education</h1>
+    <span class="grey">My education so far</span>
+
         <section class="secondsection">
-            <h1 style="
-                margin-left: 80px;
-            ">Education</h1>
-            <span class="grey">My education so far</span>
+            <div class="leftsection2">
+                <img src="vitlogo.png">
+                <h1></h1>
+            </div>
+
+            <div class="rightsection2"><h1>
+                <span class="vitinfo">Currently pursuing B.Tech in <span class="purple"> Computer Science Engineering </span>at VIT, Vellore.</span>
+                </h1>
+            </div>
+            
+        </section>
+
+        <section class="secondsection">
+            <div class="mirsstyle">
+                <img src="mirslogo.jpg">
+                <h1></h1>
+            </div>
+
+            <div class="mirstext">
+                <h1><span class="vitinfo">Completed<span class="purple">  Higher Secondary Education</span> at</h1>
+                <h2>Maharishi International Residential School</h2>
+                <h3>Graduated at <span class="purple">July 2021</span> with <span class="purple">88.2%</span>.</h3>
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <div class="lgmsstyle">
+                <img src="lgmslogo.png">
+                <h1></h1>
+            </div>
+
+            <div class="lgmstext">
+                <h1>Completed<span class="purple">  High School Education</span> at
+                Lakshmi Garden Matric Hr. Sec. School
+                <h3>Graduated at <span class="purple">May 2019</span> with <span class="purple">88.2%</span>.</h3>
+            </div>
         </section>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -148,5 +237,4 @@
         });
     </script>
 </body>
-
 </html>
